@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:task_pro_app/view/screens/authentication_screens/logo_screen.dart';
+import 'package:task_pro_app/view/screens/authentication_screens/splash_screen.dart';
 Future<void> main() async {
   runApp(const MyApp());
 }
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(useMaterial3: true),
-          home: const LogoScreen(),
+          home: const SplashScreen(),
         );
       },
     );

@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:task_pro_app/view/screens/authentication_screens/login_screen.dart';
 import '../../../controller/utils/custom_text_style.dart';
 import '../../custom_widgets/custom_elevated_button.dart';
 import '../../custom_widgets/custom_sized.dart';
@@ -84,7 +85,9 @@ class _CreateNewPasswordScreenState extends State<CreateNewPasswordScreen> {
                 },
               )),
               getVerticalSpace(3.h),
-              Center(child: CustomElevatedButton(text: "Save", onPressed: (){}))
+              Center(child: CustomElevatedButton(text: "Save", onPressed: (){
+                Get.to(()=>const LoginScreen());
+              }))
             ],),
         ),
       ),

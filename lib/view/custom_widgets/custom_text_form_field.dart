@@ -4,19 +4,19 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 import '../../controller/utils/custom_color.dart';
 
 class CustomTextFormField extends StatelessWidget {
-  final String hintText;
+  final String? hintText;
   final Widget? suffixIcon;
   final bool obscureText;
-  final TextEditingController controller;
+  final TextEditingController? controller;
   final TextInputType keyboardType;
   final VoidCallback? onSuffixIconPressed;
 
   const CustomTextFormField({
     super.key,
-    required this.hintText,
+     this.hintText,
     this.suffixIcon,
     this.obscureText = false,
-    required this.controller,
+     this.controller,
     this.keyboardType = TextInputType.text,
     this.onSuffixIconPressed,
   });
